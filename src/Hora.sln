@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F6333F66
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hora.Core.Tests", "Tests\Hora.Core.Tests\Hora.Core.Tests.csproj", "{5C0329C1-E8AB-49DB-B96A-96CFD9F11F13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hora.Core", "Hora.Core\Hora.Core.csproj", "{3799D740-6DB1-4EF6-B10F-889A0E2567DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,18 @@ Global
 		{5C0329C1-E8AB-49DB-B96A-96CFD9F11F13}.Release|x64.Build.0 = Release|Any CPU
 		{5C0329C1-E8AB-49DB-B96A-96CFD9F11F13}.Release|x86.ActiveCfg = Release|Any CPU
 		{5C0329C1-E8AB-49DB-B96A-96CFD9F11F13}.Release|x86.Build.0 = Release|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Debug|x64.Build.0 = Debug|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Debug|x86.Build.0 = Debug|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Release|x64.ActiveCfg = Release|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Release|x64.Build.0 = Release|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Release|x86.ActiveCfg = Release|Any CPU
+		{3799D740-6DB1-4EF6-B10F-889A0E2567DC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
