@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
     <Company>Erbaver</Company>
-    <Version>0.0.2</Version>
+    <Version>0.0.3.0</Version>
     <PackageId>Hora</PackageId>
     <Authors>Vincent Nwonah</Authors>
     <Product>Hora</Product>
@@ -12,6 +12,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageIcon>hora_logo.png</PackageIcon>
+    <Description>Hora is a lightweight resilient queue for inmemory background jobs. It supports fire and forget jobs with retries on failure. Executing jobs can also create new background jobs.</Description>
   </PropertyGroup>
 
   <ItemGroup>
