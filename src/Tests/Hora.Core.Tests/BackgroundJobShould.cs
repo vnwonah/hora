@@ -1,5 +1,7 @@
 using Hora.Core.Enums;
+using System;
 using System.Diagnostics;
+using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -17,6 +19,22 @@ namespace Hora.Core.Tests
         public void EnqueueJobFromRunningJob()
         {
             BackgroundJob.Enqueue(() => FirstJob());
+            Debug.WriteLine("returned");
+        }
+
+        [Fact]
+        public void EnqueueNewMemoryJobsOnSameThread()
+        {
+            BackgroundJob.Enqueue(() => ShowThreadInfo("Task 1"));
+            BackgroundJob.Enqueue(() => ShowThreadInfo("Task 2"));
+        }
+
+        private Task ShowThreadInfo(string s)
+        {
+            
+            Debug.WriteLine("{0} Thread ID: {1}",
+                              s, Thread.CurrentThread.ManagedThreadId);
+            return Task.CompletedTask;
         }
 
         private Task WriteToDebug(string name)
@@ -30,7 +48,7 @@ namespace Hora.Core.Tests
             Debug.WriteLine("Executed First Job");
             BackgroundJob.Enqueue(() => SubJobs("Subjob 1"));
             BackgroundJob.Enqueue(() => SubJobs("SubJob 2"));
-            return Task.CompletedTask;
+            throw new Exception();
 
         }
 

@@ -3,6 +3,6 @@
     public enum JobType
     {
         Memory,
-        Persistent
+        // Persistent
     }
 }
